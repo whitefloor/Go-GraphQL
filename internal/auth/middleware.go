@@ -1,12 +1,11 @@
 package auth
 
 import (
+	"Go-GraphQL/internal/pkg/jwt"
+	"Go-GraphQL/internal/users"
 	"context"
 	"net/http"
 	"strconv"
-
-	"github.com/glyphack/go-graphql-hackernews/internal/users"
-	"github.com/glyphack/go-graphql-hackernews/pkg/jwt"
 )
 
 var userCtxKey = &contextKey{"user"}
